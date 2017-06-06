@@ -1,0 +1,9 @@
+<?php
+$_config=array (
+  'name' => 'ÆÀÂÛÄ£¿é',
+  'folder' => 'pinglun',
+  'author' => 'Xdcms',
+  'url' => 'http://www.xdcms.cn',
+  'time' => '2012-10-7',
+);
+?>
