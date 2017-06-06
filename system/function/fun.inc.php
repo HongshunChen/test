@@ -397,13 +397,10 @@ function get_array($name,$field,$value,$show=0){
 		}
   
 	}  
-       
-//	for($row = 0;$row <sizeof($new);$row++){  
-//		$array[]=$new[$row];
-//	} 
-        
-        
-        return $new;
+	for($row = 0;$row <sizeof($new);$row++){  
+		$array[]=$new[$row];
+	} 
+	return $array;
 }
 
 function get_category_array($name,$field,$value,$show=0,$lang){
@@ -420,10 +417,10 @@ function get_category_array($name,$field,$value,$show=0,$lang){
 			}
 		}
 	}  
-//	for($row = 0;$row <sizeof($new);$row++){  
-//		$array[]=$new[$row];
-//	} 
-	return $new;
+	for($row = 0;$row <sizeof($new);$row++){  
+		$array[]=$new[$row];
+	} 
+	return $array;
 }
 
 //判断栏目是否有父栏目并返回ID   tid形式如：,1,2,3
@@ -653,13 +650,13 @@ function creat_html($file){
 }
 
 //发送邮件
-function sendmail($title,$text,$text2){
+function sendmail($title,$text){
 	$email=base::load_cache("cache_set_email","_email");
 	$contact=base::load_cache("cache_set_contact","_contact");
 	$smtpserver =$email['mailserver'];//SMTP服务器
 	$smtpserverport =$email['mailport'];//SMTP服务器端口
 	$smtpusermail = $email['mailadd'];//SMTP服务器的用户邮箱
-	$smtpemailto =$text2;//发送给谁
+	$smtpemailto =$contact["email"];//发送给谁
 	$smtpuser =$email['username'];//SMTP服务器的用户帐号
 	$smtppass =$email['password'];//SMTP服务器的用户密码
 	$mailsubject =$title;//邮件主题

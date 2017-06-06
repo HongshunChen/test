@@ -19,7 +19,7 @@
         <p><a href="/">首页</a> > {get_guide($cat.catid)}</p>{$cat['catname']}</div>
         <div class="body3_r2">
             <div class="body3_r3 {if $rs.style!=""}{$rs.style}{/if}">{$rs.title}</div>
-            <div class="body3_r4">发布时间：{$rs.inputtime|date_format:'%Y-%m-%d %H:%M:%S'} 点击浏览：<script src="index.php?m=content&c=index&f=hits&catid={$rs.catid}&id={$rs.id}"></script>次</div>
+            <div class="body3_r4">发布时间：{$rs.inputtime|date_format:'%Y-%m-%d %H:%M:%S'} 点击浏览：<script src="index.php?m=content&c=index&f=hits&catid={$rs.catid}&contentid={$rs.contentid}"></script>次</div>
             <div class="body3_r5">
             <!-- 文本   -->
              {$rs.content}
@@ -28,8 +28,6 @@
             {if $keywords neq ""}
             <div>热点标签：{$keywords}</div>
             {/if}
-          
-            {include file="xdcms/pinglun.html"}
             <div>上一篇：{$previous}    下一篇：{$next}</div>
         </div>
     </div>

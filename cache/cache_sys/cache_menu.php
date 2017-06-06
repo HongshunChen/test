@@ -58,7 +58,7 @@ $_menu=array (
     'url' => 'index.php?m=xdcms&c=index&f=left&id=6',
     'sort' => '0',
     'is_show' => '1',
-    'groupid' => '1',
+    'groupid' => '',
   ),
   6 => 
   array (
@@ -352,6 +352,16 @@ $_menu=array (
   ),
   35 => 
   array (
+    'menuid' => '43',
+    'parentid' => '4',
+    'title' => '友情链接管理',
+    'url' => '###',
+    'sort' => '0',
+    'is_show' => '1',
+    'groupid' => '',
+  ),
+  36 => 
+  array (
     'menuid' => '44',
     'parentid' => '4',
     'title' => '会员管理',
@@ -360,7 +370,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  36 => 
+  37 => 
   array (
     'menuid' => '45',
     'parentid' => '41',
@@ -370,7 +380,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  37 => 
+  38 => 
   array (
     'menuid' => '46',
     'parentid' => '41',
@@ -380,7 +390,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  38 => 
+  39 => 
   array (
     'menuid' => '47',
     'parentid' => '42',
@@ -390,7 +400,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  39 => 
+  40 => 
   array (
     'menuid' => '48',
     'parentid' => '42',
@@ -400,7 +410,27 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  40 => 
+  41 => 
+  array (
+    'menuid' => '49',
+    'parentid' => '43',
+    'title' => '添加链接',
+    'url' => 'index.php?m=link&c=admin&f=add',
+    'sort' => '0',
+    'is_show' => '1',
+    'groupid' => '',
+  ),
+  42 => 
+  array (
+    'menuid' => '50',
+    'parentid' => '43',
+    'title' => '管理链接',
+    'url' => 'index.php?m=link&c=admin',
+    'sort' => '0',
+    'is_show' => '1',
+    'groupid' => '',
+  ),
+  43 => 
   array (
     'menuid' => '51',
     'parentid' => '44',
@@ -410,7 +440,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  41 => 
+  44 => 
   array (
     'menuid' => '52',
     'parentid' => '44',
@@ -420,7 +450,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  42 => 
+  45 => 
   array (
     'menuid' => '53',
     'parentid' => '44',
@@ -430,7 +460,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  43 => 
+  46 => 
   array (
     'menuid' => '54',
     'parentid' => '5',
@@ -440,7 +470,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  44 => 
+  47 => 
   array (
     'menuid' => '55',
     'parentid' => '54',
@@ -450,7 +480,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  45 => 
+  48 => 
   array (
     'menuid' => '56',
     'parentid' => '5',
@@ -460,7 +490,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  46 => 
+  49 => 
   array (
     'menuid' => '57',
     'parentid' => '56',
@@ -470,7 +500,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  47 => 
+  50 => 
   array (
     'menuid' => '58',
     'parentid' => '6',
@@ -478,9 +508,9 @@ $_menu=array (
     'url' => '###',
     'sort' => '0',
     'is_show' => '1',
-    'groupid' => '1',
+    'groupid' => '',
   ),
-  48 => 
+  51 => 
   array (
     'menuid' => '59',
     'parentid' => '6',
@@ -490,7 +520,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  49 => 
+  52 => 
   array (
     'menuid' => '60',
     'parentid' => '58',
@@ -500,7 +530,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  50 => 
+  53 => 
   array (
     'menuid' => '61',
     'parentid' => '58',
@@ -510,7 +540,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  51 => 
+  54 => 
   array (
     'menuid' => '62',
     'parentid' => '58',
@@ -520,7 +550,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  52 => 
+  55 => 
   array (
     'menuid' => '63',
     'parentid' => '59',
@@ -530,7 +560,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  53 => 
+  56 => 
   array (
     'menuid' => '64',
     'parentid' => '4',
@@ -540,7 +570,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  54 => 
+  57 => 
   array (
     'menuid' => '65',
     'parentid' => '64',
@@ -550,7 +580,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  55 => 
+  58 => 
   array (
     'menuid' => '66',
     'parentid' => '4',
@@ -560,7 +590,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  56 => 
+  59 => 
   array (
     'menuid' => '67',
     'parentid' => '66',
@@ -570,7 +600,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  57 => 
+  60 => 
   array (
     'menuid' => '68',
     'parentid' => '18',
@@ -580,7 +610,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  58 => 
+  61 => 
   array (
     'menuid' => '69',
     'parentid' => '18',
@@ -590,7 +620,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  59 => 
+  62 => 
   array (
     'menuid' => '70',
     'parentid' => '21',
@@ -600,7 +630,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  60 => 
+  63 => 
   array (
     'menuid' => '74',
     'parentid' => '6',
@@ -610,7 +640,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  61 => 
+  64 => 
   array (
     'menuid' => '75',
     'parentid' => '74',
@@ -620,7 +650,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  62 => 
+  65 => 
   array (
     'menuid' => '76',
     'parentid' => '74',
@@ -630,77 +660,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  63 => 
-  array (
-    'menuid' => '79',
-    'parentid' => '4',
-    'title' => '评论管理',
-    'url' => '###',
-    'sort' => '0',
-    'is_show' => '1',
-    'groupid' => '',
-  ),
-  64 => 
-  array (
-    'menuid' => '80',
-    'parentid' => '79',
-    'title' => '管理评论',
-    'url' => 'index.php?m=pinglun&c=admin',
-    'sort' => '0',
-    'is_show' => '1',
-    'groupid' => '',
-  ),
-  65 => 
-  array (
-    'menuid' => '111',
-    'parentid' => '4',
-    'title' => '友情链接管理',
-    'url' => '###',
-    'sort' => '0',
-    'is_show' => '1',
-    'groupid' => '',
-  ),
   66 => 
-  array (
-    'menuid' => '112',
-    'parentid' => '111',
-    'title' => '添加链接类型',
-    'url' => 'index.php?m=link&c=linktype&f=add',
-    'sort' => '0',
-    'is_show' => '1',
-    'groupid' => '',
-  ),
-  67 => 
-  array (
-    'menuid' => '113',
-    'parentid' => '111',
-    'title' => '管理链接类型',
-    'url' => 'index.php?m=link&c=linktype',
-    'sort' => '0',
-    'is_show' => '1',
-    'groupid' => '',
-  ),
-  68 => 
-  array (
-    'menuid' => '114',
-    'parentid' => '111',
-    'title' => '添加链接',
-    'url' => 'index.php?m=link&c=admin&f=add',
-    'sort' => '0',
-    'is_show' => '1',
-    'groupid' => '',
-  ),
-  69 => 
-  array (
-    'menuid' => '115',
-    'parentid' => '111',
-    'title' => '管理链接',
-    'url' => 'index.php?m=link&c=admin',
-    'sort' => '0',
-    'is_show' => '1',
-    'groupid' => '',
-  ),
-  70 => 
   array (
     'menuid' => '21',
     'parentid' => '2',
@@ -710,7 +670,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  71 => 
+  67 => 
   array (
     'menuid' => '71',
     'parentid' => '2',
@@ -720,7 +680,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  72 => 
+  68 => 
   array (
     'menuid' => '73',
     'parentid' => '71',
@@ -730,7 +690,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  73 => 
+  69 => 
   array (
     'menuid' => '16',
     'parentid' => '2',
@@ -740,7 +700,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  74 => 
+  70 => 
   array (
     'menuid' => '72',
     'parentid' => '71',
@@ -750,7 +710,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  75 => 
+  71 => 
   array (
     'menuid' => '17',
     'parentid' => '2',
@@ -760,7 +720,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  76 => 
+  72 => 
   array (
     'menuid' => '18',
     'parentid' => '2',
@@ -770,7 +730,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  77 => 
+  73 => 
   array (
     'menuid' => '19',
     'parentid' => '2',
@@ -780,7 +740,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  78 => 
+  74 => 
   array (
     'menuid' => '20',
     'parentid' => '2',
@@ -790,7 +750,7 @@ $_menu=array (
     'is_show' => '1',
     'groupid' => '',
   ),
-  79 => 
+  75 => 
   array (
     'menuid' => '22',
     'parentid' => '2',

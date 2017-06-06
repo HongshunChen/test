@@ -1,23 +1,23 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2017-05-24 09:37:05
-         compiled from "D:\phpStudy\WWW\guoxun\system/templates/xdcms/qq.html" */ ?>
-<?php /*%%SmartyHeaderCode:290985924e3c111c1c8-52035261%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.8, created on 2016-07-11 14:31:35
+         compiled from "F:\www\cms_3.0.1_utf8\system/templates/xdcms/qq.html" */ ?>
+<?php /*%%SmartyHeaderCode:2183157833d472d64a8-79135000%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'a31eb0c339d25d51eb1c4262e247580031e4e9f2' => 
+    'c62555e28d44e8bfb27a3105068534ba0b7b3f48' => 
     array (
-      0 => 'D:\\phpStudy\\WWW\\guoxun\\system/templates/xdcms/qq.html',
-      1 => 1481072921,
+      0 => 'F:\\www\\cms_3.0.1_utf8\\system/templates/xdcms/qq.html',
+      1 => 1425347763,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '290985924e3c111c1c8-52035261',
+  'nocache_hash' => '2183157833d472d64a8-79135000',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
-<?php if (!is_callable('smarty_block_loop')) include 'D:\phpStudy\WWW\guoxun\system\Smarty\plugins\block.loop.php';
+<?php if (!is_callable('smarty_block_loop')) include 'F:\www\cms_3.0.1_utf8\system\Smarty\plugins\block.loop.php';
 ?><script type="text/javascript" src="<?php echo $_smarty_tpl->getVariable('js_path')->value;?>
 qq.js"></script>
 <SCRIPT type="text/javascript" src="<?php echo $_smarty_tpl->getVariable('js_path')->value;?>

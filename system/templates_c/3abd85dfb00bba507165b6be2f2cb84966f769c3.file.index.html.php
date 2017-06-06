@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2017-06-03 10:06:24
-         compiled from "D:\phpStudy\WWW\guoxun\system/templates/xdcms/index.html" */ ?>
-<?php /*%%SmartyHeaderCode:24598593219a05362b9-89388553%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.8, created on 2016-07-11 14:31:35
+         compiled from "F:\www\cms_3.0.1_utf8\system/templates/xdcms/index.html" */ ?>
+<?php /*%%SmartyHeaderCode:1270957833d470a3c28-87844777%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'a27e7d172b76e8c553066c18a93ca2d517b957a4' => 
+    '3abd85dfb00bba507165b6be2f2cb84966f769c3' => 
     array (
-      0 => 'D:\\phpStudy\\WWW\\guoxun\\system/templates/xdcms/index.html',
-      1 => 1496389914,
+      0 => 'F:\\www\\cms_3.0.1_utf8\\system/templates/xdcms/index.html',
+      1 => 1425347763,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '24598593219a05362b9-89388553',
+  'nocache_hash' => '1270957833d470a3c28-87844777',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
-<?php if (!is_callable('smarty_block_loop')) include 'D:\phpStudy\WWW\guoxun\system\Smarty\plugins\block.loop.php';
-if (!is_callable('smarty_modifier_truncate_cn')) include 'D:\phpStudy\WWW\guoxun\system\Smarty\plugins\modifier.truncate_cn.php';
-if (!is_callable('smarty_modifier_date_format')) include 'D:\phpStudy\WWW\guoxun\system\Smarty\plugins\modifier.date_format.php';
+<?php if (!is_callable('smarty_block_loop')) include 'F:\www\cms_3.0.1_utf8\system\Smarty\plugins\block.loop.php';
+if (!is_callable('smarty_modifier_truncate_cn')) include 'F:\www\cms_3.0.1_utf8\system\Smarty\plugins\modifier.truncate_cn.php';
+if (!is_callable('smarty_modifier_date_format')) include 'F:\www\cms_3.0.1_utf8\system\Smarty\plugins\modifier.date_format.php';
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -150,7 +150,6 @@ product.js"></script>
 		<!-- 行业新闻 END -->
         <div class="Cle">&nbsp;</div>       
   </div>
-    
 <?php $_template = new Smarty_Internal_Template("xdcms/footer.html", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 </div>

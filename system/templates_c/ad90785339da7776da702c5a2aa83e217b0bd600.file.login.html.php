@@ -1,17 +1,17 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2017-05-24 09:43:39
-         compiled from "D:\phpStudy\WWW\guoxun\system/templates/admin/login.html" */ ?>
-<?php /*%%SmartyHeaderCode:97565924e54b1d2664-80838370%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.8, created on 2016-07-11 14:33:00
+         compiled from "F:\www\cms_3.0.1_utf8\system/templates/admin/login.html" */ ?>
+<?php /*%%SmartyHeaderCode:1061157833d9c12bf24-61076892%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '5044331716a2b9e224523021cfdf5e4b9cb72b7a' => 
+    'ad90785339da7776da702c5a2aa83e217b0bd600' => 
     array (
-      0 => 'D:\\phpStudy\\WWW\\guoxun\\system/templates/admin/login.html',
-      1 => 1481072919,
+      0 => 'F:\\www\\cms_3.0.1_utf8\\system/templates/admin/login.html',
+      1 => 1425347763,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '97565924e54b1d2664-80838370',
+  'nocache_hash' => '1061157833d9c12bf24-61076892',
   'function' => 
   array (
   ),

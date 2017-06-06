@@ -1,23 +1,23 @@
-<?php /* Smarty version Smarty-3.0.8, created on 2017-05-24 16:38:47
-         compiled from "D:\phpStudy\WWW\guoxun\system/templates/xdcms/en/header.html" */ ?>
-<?php /*%%SmartyHeaderCode:4029592546973c33d7-62821081%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.0.8, created on 2016-07-11 14:31:35
+         compiled from "F:\www\cms_3.0.1_utf8\system/templates/xdcms/header.html" */ ?>
+<?php /*%%SmartyHeaderCode:3099657833d4723df09-68157187%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '0ff0eac2bbb235e5a644c663371c85ce050c1e24' => 
+    '89c1be34b87ad1b6c2d5da4a37381631db8ea282' => 
     array (
-      0 => 'D:\\phpStudy\\WWW\\guoxun\\system/templates/xdcms/en/header.html',
-      1 => 1481072924,
+      0 => 'F:\\www\\cms_3.0.1_utf8\\system/templates/xdcms/header.html',
+      1 => 1425347763,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4029592546973c33d7-62821081',
+  'nocache_hash' => '3099657833d4723df09-68157187',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
 )); /*/%%SmartyHeaderCode%%*/?>
-<?php if (!is_callable('smarty_block_loop')) include 'D:\phpStudy\WWW\guoxun\system\Smarty\plugins\block.loop.php';
+<?php if (!is_callable('smarty_block_loop')) include 'F:\www\cms_3.0.1_utf8\system\Smarty\plugins\block.loop.php';
 ?><?php $_template = new Smarty_Internal_Template("xdcms/qq.html", $_smarty_tpl->smarty, $_smarty_tpl, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null);
  echo $_template->getRenderedTemplate(); $_template->rendered_content = null;?><?php unset($_template);?>
 <div id="shell"> 
@@ -26,7 +26,7 @@ $_smarty_tpl->decodeProperties(array (
     	<h1><a href="/" title="<?php echo $_smarty_tpl->getVariable('config')->value['title'];?>
 "><img src="<?php echo $_smarty_tpl->getVariable('config')->value['logourl'];?>
 " /></a></h1>
-        <div id="h_r"><script src="index.php?m=member&c=login&f=login_en_text"></script> | <a href="/">中文</a></div>
+        <div id="h_r"><script src="index.php?m=member&c=login&f=login_text"></script> | <a href="/index.php?l=2">English</a></div>
 	</div>
 	<!-- 页头 END -->
 
@@ -36,7 +36,7 @@ $_smarty_tpl->decodeProperties(array (
     		<div id="menu">
                 <ul id="nav">
                     <li class="jquery_out"></li>
-                    <li class="mainlevel"><a href="/index.php?l=2" >Home</a></li>
+                    <li class="mainlevel"><a href="/" >首　页</a></li>
                     <?php  $_smarty_tpl->tpl_vars['value'] = new Smarty_Variable;
  $_smarty_tpl->tpl_vars['key'] = new Smarty_Variable;
  $_from = $_smarty_tpl->getVariable('menu')->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
@@ -70,8 +70,8 @@ if ($_smarty_tpl->_count($_from) > 0){
                 <input type="image" src="<?php echo $_smarty_tpl->getVariable('image_path')->value;?>
 search_submit.gif" class="search_submit" />
                 <input name="f" type="hidden" id="f" value="search" />
-                <input name="l" type="hidden" id="l" value="2" />
-                <input name="catid" type="hidden" id="catid" value="34" />
+                <input name="l" type="hidden" id="l" value="1" />
+                <input name="catid" type="hidden" id="catid" value="2" />
             </form>
         </div>
 		<div class="cle">&nbsp;</div>

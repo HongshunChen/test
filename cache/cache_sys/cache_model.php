@@ -40,21 +40,5 @@ $_model=array (
     'is_lock' => '1',
     'is_fixed' => '0',
   ),
-  5 => 
-  array (
-    'id' => '6',
-    'model_name' => '测试模型',
-    'model_table' => 'ceshi',
-    'is_lock' => '1',
-    'is_fixed' => '0',
-  ),
-  6 => 
-  array (
-    'id' => '7',
-    'model_name' => '模型2',
-    'model_table' => 'moxing2',
-    'is_lock' => '1',
-    'is_fixed' => '0',
-  ),
 );
 ?>

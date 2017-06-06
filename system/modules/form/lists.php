@@ -64,97 +64,31 @@ class lists extends db{
 		if(!in_array(DB_PRE.$form,$table)){
 			showmsg(C('table_not_exist'),'-1');
 		}
-	
 
 		//添加附加表
 		$sql_fields='`inputtime`';
 		$sql_value=datetime();
 		$send_text='留言内容：<br>';
-		$send_text2='';
+		
 		foreach($fields as $key=>$value){
-			if($key=='zhuanmail'){
 			$sql_fields.=",`".safe_replace($key)."`";
-			$value2='';
 			if(is_array($value)){
 				$value_arr='';
 				foreach($value as $k=>$v){
 					$value_arr.=$v.',';
-					
 				}
-				$value=$value_arr;  
-				
-				
-			}
-			$b= (strpos($value,":"));
-			$value2=substr($value,$b+1); 
-			$sql_value.=",\"".safe_replace(safe_html($value2))."\"";
-			$send_text2=safe_replace(safe_html($value2));  //正则
-			}else{
-				$sql_fields.=",`".safe_replace($key)."`";
-				if(is_array($value)){
-					$value_arr='';
-					foreach($value as $k=>$v){
-						$value_arr.=$v.',';
-						
-					}
-					$value=$value_arr;
+				$value=$value_arr;
 			}
 			$sql_value.=",\"".safe_replace(safe_html($value))."\"";
-			
-			switch ($key){
-				case "title":
-					$send_text.=safe_replace(safe_html("标题"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "truename":
-					$send_text.=safe_replace(safe_html("姓名"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "age":
-					$send_text.=safe_replace(safe_html("年龄"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "telephone":
-					$send_text.=safe_replace(safe_html("联系电话"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "address":
-					$send_text.=safe_replace(safe_html("目前所在地"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "school":
-					$send_text.=safe_replace(safe_html("咨询问题"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "work":
-					$send_text.=safe_replace(safe_html("过程简述"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "question":
-					$send_text.=safe_replace(safe_html("咨询问题"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-				case "sketch":
-					$send_text.=safe_replace(safe_html("过程简述"))."<br>";
-					$send_text.=safe_replace(safe_html($value))."<br>";
-					break;
-			}
-			
-			//$send_text.=safe_replace(safe_html($key))."<br>";
-			//$send_text.=safe_replace(safe_html($value))."<br>";
-			
-			
-			
-			}
+			$send_text.=safe_replace(safe_html($value))."<br>";
 		}
 		
 		$this->mysql->query("insert into ".DB_PRE.$form."({$sql_fields}) values ({$sql_value})");
 		$rs=$this->mysql->get_one("select * from ".DB_PRE."form where id=".$formid);
 		if($rs['is_email']==1){
-			sendmail('有人给您留言了！',$send_text,$send_text2);
+			sendmail('有人给您留言了！',$send_text);
 		}
 		showmsg(C('add_success'),'-1');
-
 	}
 }
 ?>
