@@ -8,3 +8,5 @@ Homestead.json
 weixin/.svn
 mobile/.svn
 /nbproject/*
+
+/system/templates_c/*
