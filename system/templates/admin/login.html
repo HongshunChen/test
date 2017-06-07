@@ -8,15 +8,20 @@
 </head>
 
 <body>
-<form  name="form" method="post"  action="index.php?m=xdcms&c=login&f=check" onSubmit="return checksignup()">
-<div class="login">
-    <ul>
-    	<li><input type="text" name="username" id="username" class="txt" /></li>
-        <li><input type="password" name="password" id="password" class="txt" /></li>
-        <li><input type="text" name="verifycode" id="verifycode" class="txt w96" /><img src="admin/verifycode.php" border="0" alt="验证码,看不清楚?请点击刷新验证码" onClick="this.src=this.src+'?'+Math.random();" class="codeimage"/></li>
-        <li><input type="submit" name="button" id="button" value="" class="submit" /></li>
-    </ul>
+<div id="wwk">
+<div id="dly_logo">
 </div>
+
+<form id="login_f"  name="form" method="post"  action="index.php?m=xdcms&c=login&f=check" onSubmit="return checksignup()">
+    <div class="login">
+        <ul>
+            <li><input autocomplete="off" type="text" name="username" id="username"  value="请输入管理员账号" onfocus="javascript:if(this.value=='请输入管理员账号')this.value='';"/></li>
+            <li><input autocomplete="off" type="password" name="password" id="password"  value="请输入账号密码" onfocus="javascript:if(this.value=='请输入账号密码')this.value='';"/></li>
+            <li><input autocomplete="off" type="text" name="verifycode" id="verifycode" class="w96"  value="请输入右侧验证码" onfocus="javascript:if(this.value=='请输入右侧验证码')this.value='';"/><img src="admin/verifycode.php" border="0" alt="验证码,看不清楚?请点击刷新验证码" onClick="this.src=this.src+'?'+Math.random();" class="codeimage"/></li>
+            <li><input type="submit" name="button" id="button" value="登    录" class="submit" /></li>
+        </ul>
+    </div>
 </form>
+</div>
 </body>
 </html>

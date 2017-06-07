@@ -10,19 +10,20 @@
 <body>
 <div class="main header">
 	<div class="logo"></div>
+    <h5>
+        <a class="logo_r" href="index.php?m=xdcms&c=setting" target="main">系统设置</a>
+        <a class="logo_r" href="/" target="_blank">首&nbsp;&nbsp;页</a>
+        <a class="logo_r" href="index.php?m=xdcms&c=login&f=out" target="_parent">退&nbsp;&nbsp;出</a>
+        <a class="logo_r" href="javascript:void(0)">使用帮助</a>
+        <a class="logo_r" href="javascript:void(0)">关&nbsp;&nbsp;于</a>
+    </h5>
+</div>
+<div class="manage">
     <ul id="ulst">
     {foreach $top_menu as $k=>$v}
         <a {if $k==0}id="on"{/if} class="list" onClick="parent.left.location='{$v.url}';" href="index.php?m=xdcms&c=index&f=main" target="main"><li>{$v.title}</li></a>
     {/foreach}
     </ul>
-    
-    <h5>
-        <a class="logo_r" href="index.php?m=xdcms&c=setting" target="main">系统设置</a>
-        <a class="logo_r" href="{$config['siteurl']}" target="_blank">首&nbsp;&nbsp;页</a>
-        <a class="logo_r" href="index.php?m=xdcms&c=login&f=out" target="_parent">退&nbsp;&nbsp;出</a>
-        <a class="logo_r" href="javascript:void(0)">使用帮助</a>
-        <a class="logo_r" href="javascript:void(0)">关&nbsp;&nbsp;于</a>
-    </h5>
 </div>
 <div class="position">
     <h5>后台内容管理</h5>

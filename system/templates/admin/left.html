@@ -20,5 +20,17 @@
 {$menu}
 </div>
 {/nocache}
+
+<script>
+$(".parent").click(function(){
+	$(this).siblings().children("ul").children("li").attr("id","");
+});
+$(".child").click(function(){
+	$(this).attr("id","list");
+	$(this).siblings().attr("id","");
+	
+})
+</script>
+
 </body>
 </html>

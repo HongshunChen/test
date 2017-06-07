@@ -65,13 +65,13 @@ function C($clue){
 function showmsg($msg,$gourl,$onlymsg=0,$limittime=0){
 	$htmlhead  = "<html>\r\n<head>\r\n<title>提示信息</title>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\r\n";
 	$htmlhead .= "<base target='_self'/>\r\n<style>";
-	$htmlhead .= "*{font-size:12px;color:#2B61BA;}\r\n";
+	$htmlhead .= "*{font-size:12px;color:#000;}\r\n";
 	$htmlhead .= "body{font-family:\"微软雅黑\",\"宋体\", Verdana, Arial, Helvetica, sans-serif;background:#FFFFFF;margin:0;}\r\n";
-	$htmlhead .= "a:link,a:visited,a:active {color:#ABBBD6;text-decoration:none;}\r\n";
-	$htmlhead .= ".msg{width:400px;text-align:left;background:#FFFFFF url('admin/images/msgbg.gif') repeat-x;margin:auto;}\r\n";
-    $htmlhead .= ".head{letter-spacing:2px;line-height:29px;height:26px;overflow:hidden;font-weight:bold;}\r\n";
-    $htmlhead .= ".content{padding:10px 20px 5px 20px;line-height:200%;word-break:break-all;border:#7998B7 1px solid;border-top:none;}\r\n";
-    $htmlhead .= ".ml{color:#FFFFFF;background:url('admin/images/msg.gif') no-repeat 0 0;padding-left:10px;}\r\n";
+	$htmlhead .= "a:link,a:visited,a:active {color:#ccc;text-decoration:none;}\r\n";
+	$htmlhead .= ".msg{width:400px;text-align:left;background:#FFFFFF;margin:auto;}\r\n";
+    $htmlhead .= ".head{letter-spacing:2px;line-height:40px;height:40px;overflow:hidden;}\r\n";
+    $htmlhead .= ".content{padding:20px;line-height:200%;word-break:break-all;border:#ccc 1px solid;border-top:none;}\r\n";
+    $htmlhead .= ".ml{color:#FFFFFF;background:#43505b;padding-left:20px; height:40px;}\r\n";
     $htmlhead .= ".mr{float:right;background:url('admin/images/msg.gif') no-repeat 0 -34px;width:4px;font-size:1px;}\r\n";
     $htmlhead .= "</style></head>\r\n<body leftmargin='0' topmargin='0'><center>\r\n<script>\r\n";
 	$htmlfoot  = "</script>\r\n</center>\r\n</body>\r\n</html>\r\n";
