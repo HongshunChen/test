@@ -109,7 +109,16 @@ class creathtml extends Checklogin{
 			$this->update_con_url($value);
 		}
 		
-		showmsg(C('update_success'),'-1');
+		$query=$this->mysql->query("select config_array from c_config where id = 1");
+		while($rs=$this->mysql->fetch_rows($query)){
+			$status = $rs["config_array"];
+		}
+		eval("\$arr = ".$status.'; ');
+		if($arr["createhtml"] == 1){
+			header_location("index.php?m=xdcms&c=creathtml&f=show_html");
+		}else{
+			showmsg(C('update_success'),'-1');
+		}
 	}
 	
 	//根据栏目ID更新栏目下所有内容url
